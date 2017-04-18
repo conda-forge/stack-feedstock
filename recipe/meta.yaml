@@ -15,12 +15,12 @@ source:
   sha256: {{ osxsha256 }}  # [osx]
 
 build:
-  number: 0
+  number: 1
   skip: True  # [win] 
 
 requirements:
   run:
-    - gmp
+    - gmp >=5.0.1,<7
 
 test:
   commands:
