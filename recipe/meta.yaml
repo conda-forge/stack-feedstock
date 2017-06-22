@@ -1,6 +1,6 @@
-{% set version = "1.3.2" %}
-{% set unixsha256 = "ebeb76744c85b7cd5504b6e29f8912b920a247b7895a2d4a1fe9564f5c5ec164" %}
-{% set osxsha256 = "e7097282684d182d8fecc4990178e91fd7efe83f33827b4d066fb7324e2d7dd9" %}
+{% set version = "1.4.0" %}
+{% set unixsha256 = "8cc2bb0da1e5f77de7257662c63c82ed289b09a37c72c2fc7a8a81983dbe30ba" %}
+{% set osxsha256 = "0bdca23578063c14f8d8cfa2f0d9d40f283d41d23c9371a9b3f9b2dc55166151" %}
 
 package:
   name: stack
@@ -15,7 +15,7 @@ source:
   sha256: {{ osxsha256 }}  # [osx]
 
 build:
-  number: 1
+  number: 0
   skip: True  # [win] 
 
 requirements:
