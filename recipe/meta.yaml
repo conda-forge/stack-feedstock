@@ -1,6 +1,6 @@
-{% set version = "1.5.1" %}
-{% set unixsha256 = "6a250cbab60870f6b933c780c96c5cafb02d066a6f2d7182bb00ec005262842b" %}
-{% set osxsha256 = "ef9b06070817d741d7e81025e426100f8583c994f3edc9e3255af6c916c276bf" %}
+{% set version = "1.6.1" %}
+{% set unixsha256 = "5f7ad6f2934561beb296d472f77034033c38a89a2ec2aeba78edcbb0034af80e" %}
+{% set osxsha256 = "a50eb924e0902690152f88b7e9c5b7fe4ad371bc65dc228a53911cba4e3f8a7c" %}
 
 package:
   name: stack
