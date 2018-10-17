@@ -1,4 +1,4 @@
-{% set version = "1.7.1" %}
+{% set version = "1.9.1" %}
 {% set unixsha256 = "647306bbf65dd0b555486e2a32776ba1cfe0c8f380e31c6aa93abd452cb209ee" %}
 {% set osxsha256 = "c70073f7548d48bf07b7fa076902db5e0d470a941a35c5998106297a7c614d63" %}
 {% set winsha256 = "0261779ce3598747528547585e78c4e6ad72b70523c9ac3d5c684f2b16791af6" %}
@@ -19,7 +19,7 @@ source:
   sha256: {{ winsha256 }}  # [win]
 
 build:
-  number: 1
+  number: 0
 
 requirements:
   run:
