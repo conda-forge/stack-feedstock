@@ -20,8 +20,15 @@ source:
 
 build:
   number: 1000
+  ignore_run_exports:
+      - libstdcxx-ng
 
 requirements:
+  build:
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
+  host:
+    - gmp >=5.0.1,<7  # [not win]
   run:
     - gmp >=5.0.1,<7  # [not win]
 
@@ -32,6 +39,7 @@ test:
 about:
   home: www.haskellstack.org
   license: BSD3-like
+  license_file: LICENSE
   summary: 'Stack is a cross-platform program for developing Haskell projects.'
   doc_url: https://docs.haskellstack.org/en/stable/README/
   dev_url: https://github.com/commercialhaskell/stack
