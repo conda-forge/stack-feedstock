@@ -40,6 +40,7 @@ requirements:
 test:
   commands:
     - stack --help
+    - stack setup
 
 about:
   home: www.haskellstack.org
