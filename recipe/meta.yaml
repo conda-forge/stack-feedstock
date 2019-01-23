@@ -27,8 +27,16 @@ requirements:
     - {{ compiler('cxx') }}
   host:
     - gmp  # [not win]
+    - libffi
+    - ncurses
+    - make
+    - zlib
   run:
     - gmp  # [not win]
+    - libffi
+    - ncurses
+    - make
+    - zlib
 
 test:
   commands:
