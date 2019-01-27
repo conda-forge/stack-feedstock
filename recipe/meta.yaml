@@ -1,7 +1,7 @@
-{% set version = "1.7.1" %}
-{% set unixsha256 = "647306bbf65dd0b555486e2a32776ba1cfe0c8f380e31c6aa93abd452cb209ee" %}
-{% set osxsha256 = "c70073f7548d48bf07b7fa076902db5e0d470a941a35c5998106297a7c614d63" %}
-{% set winsha256 = "0261779ce3598747528547585e78c4e6ad72b70523c9ac3d5c684f2b16791af6" %}
+{% set version = "1.9.3" %}
+{% set unixsha256 = "e2363728e5818ccc68db9371c15af892a9a1fc86d808d0a9a77257f13696e946" %}
+{% set osxsha256 = "05ff745b88fb24911aa6b7e2b2e7098f04c2fdf769f00f921d44ffecbc417bc2" %}
+{% set winsha256 = "9ff25247ad90478bdea042df2520e7865521d9023ba8dc6eae79875e1b11fcbb" %}
 
 package:
   name: stack
@@ -19,19 +19,23 @@ source:
   sha256: {{ winsha256 }}  # [win]
 
 build:
-  number: 1
+  number: 1000
 
 requirements:
+  host:
+    - gmp  # [not win]
   run:
-    - gmp >=5.0.1,<7  # [not win]
+    - gmp  # [not win]
 
 test:
   commands:
     - stack --help
+    - stack new helloworld new-template && cd helloworld && stack setup && stack build
 
 about:
   home: www.haskellstack.org
   license: BSD3-like
+  license_file: LICENSE
   summary: 'Stack is a cross-platform program for developing Haskell projects.'
   doc_url: https://docs.haskellstack.org/en/stable/README/
   dev_url: https://github.com/commercialhaskell/stack
