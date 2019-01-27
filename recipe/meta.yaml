@@ -20,7 +20,7 @@ source:
   sha256: {{ winsha256 }}  # [win]
 
 build:
-  number: 1000
+  number: 1001
 
 requirements:
   host:
