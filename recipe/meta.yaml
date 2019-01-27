@@ -30,6 +30,7 @@ requirements:
 test:
   commands:
     - stack --help
+    - stack new helloworld new-template && cd helloworld && stack setup && stack build
 
 about:
   home: www.haskellstack.org
