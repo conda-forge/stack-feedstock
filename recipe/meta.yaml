@@ -30,9 +30,9 @@ requirements:
     - perl
     - gcc_binutils-64  # [linux]
     - gcc_linux-64  # [linux]
-    - ncurses
-    - libffi
-    - zlib
+    - ncurses  # [not win]
+    - libffi  # [not win]
+    - zlib  # [not win]
 
 test:
   commands:
