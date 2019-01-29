@@ -28,7 +28,7 @@ requirements:
     - gmp  # [not win]
     - xz
     - perl
-    - gcc_binutils-64  # [linux]
+    - binutils_linux-64  # [linux]
     - gcc_linux-64  # [linux]
     - ncurses  # [not win]
     - libffi  # [not win]
