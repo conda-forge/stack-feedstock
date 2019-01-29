@@ -27,6 +27,12 @@ requirements:
   run:
     - gmp  # [not win]
     - xz
+    - perl
+    - gcc_binutils-64  # [linux]
+    - gcc_linux-64  # [linux]
+    - ncurses
+    - libffi
+    - zlib
 
 test:
   commands:
