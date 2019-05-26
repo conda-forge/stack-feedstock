@@ -1,4 +1,4 @@
-{% set version = "1.9.3" %}
+{% set version = "2.1.0.1" %}
 {% set unixsha256 = "e2363728e5818ccc68db9371c15af892a9a1fc86d808d0a9a77257f13696e946" %}
 {% set osxsha256 = "05ff745b88fb24911aa6b7e2b2e7098f04c2fdf769f00f921d44ffecbc417bc2" %}
 {% set winsha256 = "9ff25247ad90478bdea042df2520e7865521d9023ba8dc6eae79875e1b11fcbb" %}
@@ -19,7 +19,7 @@ source:
   sha256: {{ winsha256 }}  # [win]
 
 build:
-  number: 1000
+  number: 0
 
 requirements:
   host:
