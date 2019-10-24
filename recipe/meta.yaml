@@ -1,22 +1,19 @@
 {% set version = "2.1.0.3" %}
-{% set unixsha256 = "e2363728e5818ccc68db9371c15af892a9a1fc86d808d0a9a77257f13696e946" %}
-{% set osxsha256 = "05ff745b88fb24911aa6b7e2b2e7098f04c2fdf769f00f921d44ffecbc417bc2" %}
-{% set winsha256 = "9ff25247ad90478bdea042df2520e7865521d9023ba8dc6eae79875e1b11fcbb" %}
 
 package:
   name: stack
   version: {{ version }}
 
 source:
-  fn: stack-{{ version }}-linux-x86_64.tar.gz  # [unix]
-  url: https://github.com/commercialhaskell/stack/releases/download/v{{ version }}/stack-{{ version }}-linux-x86_64.tar.gz  # [unix]
-  sha256: {{ unixsha256 }}  # [unix]
+  fn: stack-{{ version }}-linux-x86_64.tar.gz  # [linux]
+  url: https://github.com/commercialhaskell/stack/releases/download/v{{ version }}/stack-{{ version }}-linux-x86_64.tar.gz  # [linux]
+  sha256: 1b12a15b6630218b9fb1798d5390ecc2dbf81a47fb2dbbce15d8d10191cc6467  # [linux]
   fn: stack-{{ version }}-osx-x86_64.tar.gz  # [osx]
   url: https://github.com/commercialhaskell/stack/releases/download/v{{ version }}/stack-{{ version }}-osx-x86_64.tar.gz  # [osx]
-  sha256: {{ osxsha256 }}  # [osx]
+  sha256: 3e60ec5da70e11574bb7ff18f2ec2961d7b995344bac1e54336c37a7600e0bdc  # [osx]
   fn: stack-{{ version }}-windows-x86_64.zip  # [win]
   url: https://github.com/commercialhaskell/stack/releases/download/v{{ version }}/stack-{{ version }}-windows-x86_64.zip  # [win]
-  sha256: {{ winsha256 }}  # [win]
+  sha256: db508803dfd2d1c0e09821d8c0538f864e2e70018120e37398ada992e39ec4ed  # [win]
 
 build:
   number: 0
@@ -43,3 +40,4 @@ about:
 extra:
   recipe-maintainers:
     - eggzilla
+    - scopatz
