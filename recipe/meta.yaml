@@ -1,7 +1,7 @@
 {% set version = "2.1.3" %}
 {% set linuxsha256 = "4e937a6ad7b5e352c5bd03aef29a753e9c4ca7e8ccc22deb5cd54019a8cf130c" %}
 {% set osxsha256 = "84b05b9cdb280fbc4b3d5fe23d1fc82a468956c917e16af7eeeabec5e5815d9f" %}
-{% set winsha256 = "075bcd9130cd437de4e726466e5738c92c8e47d5666aa3a15d339e6ba62f76b2" %}
+{% set winsha256 = "415fb140c7497c4771b84e45a38b65ad47f50b9adc06499b03c4f5a8899aa32a" %}
 
 package:
   name: stack
