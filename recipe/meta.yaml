@@ -29,6 +29,7 @@ requirements:
 
 test:
   commands:
+    - stack --version
     - stack --help
     - stack new helloworld new-template && cd helloworld && stack setup && stack build
 
