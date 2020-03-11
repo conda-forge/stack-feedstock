@@ -1,6 +1,9 @@
 #!/bin/bash
 
+set -e -o pipefail -x
+
 mkdir -p ${PREFIX}/bin
 mv stack ${PREFIX}/bin
 
-chmod +x ${PREFIX}/bin/stack
+chmod u+x ${PREFIX}/bin/stack
+
