@@ -1,6 +1,6 @@
 
 mkdir "%PREFIX%\bin" || goto :error
-mv stack "%LIBRARY_BIN%\stack" || goto :error
+move stack.exe "%PREFIX%\bin\stack.exe" || goto :error
 goto :EOF
 
 :error
