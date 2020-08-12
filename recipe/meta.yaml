@@ -1,7 +1,7 @@
-{% set version = "2.3.1" %}
-{% set linuxsha256 = "4bae8830b2614dddf3638a6d1a7bbbc3a5a833d05b2128eae37467841ac30e47" %}
-{% set osxsha256 = "73eee7e5f24d11fd0af00cb05f16119e86be5d578c35083250e6b85ed1ca3621" %}
-{% set winsha256 = "4790975b189d2a511e2e9fa6416d9d2d869763f7ae93e522afac7c2edae279c2" %}
+{% set version = "2.3.3" %}
+{% set linuxsha256 = "e7329c75d9c7ea168eb12caa954102e451906f350604a18d6e852ac81da5a2be" %}
+{% set osxsha256 = "3878029377275641b9e2b1dfe7fab819f1f18b3ffda6414ce07472b17c125c7f" %}
+{% set winsha256 = "fb14dfea14cc0562a2e7c78f2c92be0f7b6119f1b3c2265f5e623b7149309802" %}
 
 package:
   name: stack
@@ -9,7 +9,7 @@ package:
 
 source:
   fn: stack-{{ version }}-linux-x86_64.tar.gz  # [linux]
-  url: https://github.com/commercialhaskell/stack/releases/download/v{{ version }}/stack-{{ version }}-linux-x86_64-static.tar.gz  # [linux]
+  url: https://github.com/commercialhaskell/stack/releases/download/v{{ version }}/stack-{{ version }}-linux-x86_64.tar.gz  # [linux]
   sha256: {{ linuxsha256 }}  # [linux]
   fn: stack-{{ version }}-osx-x86_64.tar.gz  # [osx]
   url: https://github.com/commercialhaskell/stack/releases/download/v{{ version }}/stack-{{ version }}-osx-x86_64.tar.gz  # [osx]
@@ -19,7 +19,7 @@ source:
   sha256: {{ winsha256 }}  # [win]
 
 build:
-  number: 1
+  number: 0
 
 requirements:
   host:
