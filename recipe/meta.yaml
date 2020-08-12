@@ -21,12 +21,6 @@ source:
 build:
   number: 0
 
-requirements:
-  host:
-    - gmp  # [not win]
-  run:
-    - gmp  # [not win]
-
 test:
   commands:
     - stack --version
