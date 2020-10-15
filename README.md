@@ -5,11 +5,13 @@ Home: www.haskellstack.org
 
 Package license: BSD3-like
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/stack-feedstock/blob/master/LICENSE.txt)
 
 Summary: Stack is a cross-platform program for developing Haskell projects.
 
+Development: https://github.com/commercialhaskell/stack
 
+Documentation: https://docs.haskellstack.org/en/stable/README/
 
 Current build status
 ====================
