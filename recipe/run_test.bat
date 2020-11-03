@@ -7,7 +7,7 @@ stack new helloworld new-template || goto :error
 
 cd helloworld                     || goto :error
 
-stack setup                       || goto :error
+stack -v setup                    || goto :error
 
 stack build                       || goto :error
 

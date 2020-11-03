@@ -19,7 +19,15 @@ source:
   sha256: {{ winsha256 }}  # [win]
 
 build:
-  number: 0
+  number: 1
+
+requirements:
+  run:
+    - {{ compiler('c') }}  # [linux]
+    - gmp                  # [linux]
+    - make                 # [linux]
+    - ncurses              # [linux]
+    - perl                 # [linux]
 
 about:
   home: www.haskellstack.org
