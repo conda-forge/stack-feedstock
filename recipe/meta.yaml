@@ -21,12 +21,6 @@ source:
 build:
   number: 0
 
-test:
-  commands:
-    - stack --version
-    - stack --help
-    - stack new helloworld new-template && cd helloworld && stack setup && stack build
-
 about:
   home: www.haskellstack.org
   license: BSD3-like
