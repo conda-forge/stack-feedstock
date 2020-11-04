@@ -19,13 +19,15 @@ source:
   sha256: {{ winsha256 }}  # [win]
 
 build:
-  number: 0
+  number: 1
 
-test:
-  commands:
-    - stack --version
-    - stack --help
-    - stack new helloworld new-template && cd helloworld && stack setup && stack build
+requirements:
+  run:
+    - {{ compiler('c') }}  # [linux]
+    - gmp                  # [linux]
+    - make                 # [linux]
+    - ncurses              # [linux]
+    - perl                 # [linux]
 
 about:
   home: www.haskellstack.org
