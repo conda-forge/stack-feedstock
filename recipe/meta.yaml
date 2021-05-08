@@ -1,7 +1,7 @@
-{% set version = "2.5.1" %}
-{% set linuxsha256 = "c83b6c93d6541c0bce2175085a04062020f4160a86116e20f3b343b562f2d1e8" %}
-{% set osxsha256 = "f4aedfa8fbe371f77286ee97ec5c3c553842e7ae15b2952a8b8442dccba04bf0" %}
-{% set winsha256 = "925fcc22e8f40465d2f6a5f9e23a49178d650bd8c6caa3d820c80258a8232a8b" %}
+{% set version = "2.7.1" %}
+{% set linuxsha256 = "2bc47749ee4be5eccb52a2d4a6a00b0f3b28b92517742b40c675836d7db2777d" %}
+{% set osxsha256 = "4248c6fbc87e8a2c06f39e867eb5ef28eae0d99470137cb415356c631c0dcbf2" %}
+{% set winsha256 = "12729150cbbd0e5007fc59a70ed17a9ba4ef1430e24d3e440b435128a3029ab1" %}
 
 package:
   name: stack
@@ -19,7 +19,7 @@ source:
   sha256: {{ winsha256 }}  # [win]
 
 build:
-  number: 1
+  number: 0
 
 requirements:
   run:
