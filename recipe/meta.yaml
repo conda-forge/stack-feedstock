@@ -1,7 +1,7 @@
-{% set version = "2.7.5" %}
-{% set linuxsha256 = "9bcd165358d4dcafd2b33320d4fe98ce72faaf62300cc9b0fb86a27eb670da50" %}
-{% set osxsha256 = "94176b71425d76b94b088515103316ae1ff96d123344b1f4609c103d0d5bdcc4" %}
-{% set winsha256 = "a77a1b27501d78800baa7e88d8ccca1d6e9b19b9c59f02f2a40ca260aaa75260" %}
+{% set version = "2.9.1" %}
+{% set linuxsha256 = "0581cebe880b8ed47556ee73d8bbb9d602b5b82e38f89f6aa53acaec37e7760d" %}
+{% set osxsha256 = "53f13c2a12953ec1660635d3f20e5036a7169de3ad58bd52e513687e19fc71c6" %}
+{% set winsha256 = "5bbf72847b9978bcc8f23b4db3f1b9f76e85628086f85b6b29aa5d6a7ba4497d" %}
 
 package:
   name: stack
@@ -41,3 +41,4 @@ extra:
   recipe-maintainers:
     - eggzilla
     - LaurentRDC
+    - matthiasdiener
