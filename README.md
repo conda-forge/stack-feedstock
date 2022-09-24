@@ -189,4 +189,5 @@ Feedstock Maintainers
 
 * [@LaurentRDC](https://github.com/LaurentRDC/)
 * [@eggzilla](https://github.com/eggzilla/)
+* [@matthiasdiener](https://github.com/matthiasdiener/)
 
