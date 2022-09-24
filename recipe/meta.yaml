@@ -18,7 +18,7 @@ source:
   url: https://github.com/commercialhaskell/stack/releases/download/v{{ version }}/stack-{{ version }}-windows-x86_64.zip  # [win]
   sha256: {{ winsha256 }}  # [win]
   url: https://github.com/commercialhaskell/stack/releases/download/v{{ version }}/stack-{{ version }}-linux-aarch64.tar.gz  # [linux and aarch64]
-  sha256: 3cb6da342707c463c549c0b627e0959617804ad17b1edb22a7179d59dc347683  # [linux and aarch64]
+  sha256: 741cf6552adcd41ca0c38c4f03b1e8f244873d988f70ef5ed4b502c0df28ea5a  # [linux and aarch64]
 
 build:
   number: 0
