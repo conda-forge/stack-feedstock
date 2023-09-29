@@ -1,7 +1,7 @@
-{% set version = "2.11.1" %}
-{% set linuxsha256 = "408a120e824ed6e6b24c548a2ff6f210fcb0eed246f204a280ed4c75af0517e7" %}
-{% set osxsha256 = "cf3ce4c526fb29fabf84308a8a762f7ab703975f5c9eeb85aebcea97a02540fc" %}
-{% set winsha256 = "56a9394b3be8058206aa1efa23ea40cd8a3afbfd295432de7a81d72e86615087" %}
+{% set version = "2.13.1" %}
+{% set linuxsha256 = "45281bb2385e928916ec8bcbc7ab790ce8721bbf805f3d0752544ada22ad5ea3" %}
+{% set osxsha256 = "b7d46382edb17230d21943844550d3aaeacee8b6fb1fcc7980ca59bee500b2a5" %}
+{% set winsha256 = "fc91369194dcf8ebdf6450f4ee1053088ecc20d5ea16faa260b498d9182777f1" %}
 
 package:
   name: stack
