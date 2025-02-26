@@ -6,15 +6,15 @@ package:
 
 source:
   url: https://github.com/commercialhaskell/stack/releases/download/v{{ version }}/stack-{{ version }}-linux-x86_64.tar.gz  # [linux64]
-  sha256: d55f8554932aad23f7b1198e0d5ebe332073d73fe60e3f324d0b315c156d8c43  # [linux64]
-  url: https://github.com/commercialhaskell/stack/releases/download/v{{ version }}/stack-{{ version }}-linux-aarch64.tar.gz  # [linux_aarch64]
-  sha256: d55f8554932aad23f7b1198e0d5ebe332073d73fe60e3f324d0b315c156d8c43  # [linux_aarch64]
-  url: https://github.com/commercialhaskell/stack/releases/download/v{{ version }}/stack-{{ version }}-osx-x86_64.tar.gz  # [osx64]
-  sha256: 1c17151516d120abdd9d6cdd93ba72ccda95db822da80bcafe0cf9cdc164c1d9  # [osx64]
-  url: https://github.com/commercialhaskell/stack/releases/download/v{{ version }}/stack-{{ version }}-osx-aarch64.tar.gz  # [osx_arm64]
-  sha256: 1c17151516d120abdd9d6cdd93ba72ccda95db822da80bcafe0cf9cdc164c1d9  # [osx_arm64]
+  sha256: 4e635d6168f7578a5694a0d473c980c3c7ed35d971acae969de1fd48ef14e030  # [linux64]
+  url: https://github.com/commercialhaskell/stack/releases/download/v{{ version }}/stack-{{ version }}-linux-aarch64.tar.gz  # [linux and aarch64]
+  sha256: f0c4b038c7e895902e133a2f4c4c217e03c4be44aa5da48aec9f7947f4af090b  # [linux and aarch64]
+  url: https://github.com/commercialhaskell/stack/releases/download/v{{ version }}/stack-{{ version }}-osx-x86_64.tar.gz  # [osx and 64]
+  sha256: ef97f65759a922bc7f5399d9311afdc4a43cc454b70ea7426f991c067899cef1  # [osx and 64]
+  url: https://github.com/commercialhaskell/stack/releases/download/v{{ version }}/stack-{{ version }}-osx-aarch64.tar.gz  # [osx and arm64]
+  sha256: fc963f041fbe3ddf3ff12271c74334846a583a0714ce808d8a2d2c91de4a3968  # [osx and arm64]
   url: https://github.com/commercialhaskell/stack/releases/download/v{{ version }}/stack-{{ version }}-windows-x86_64.zip  # [win]
-  sha256: 419aa63fd8e93d241e2b41e981bbee0ca6129fb95f062b76bb7b2243bd70abf8  # [win]
+  sha256: fba8cd635982151ca890d2ca73f98a69e05a7387077fdc2d102f52580ba81cdf  # [win]
 
 build:
   number: 0
@@ -27,6 +27,10 @@ requirements:
     - make                 # [linux]
     - ncurses              # [linux]
     - perl                 # [linux]
+
+test:
+  commands:
+    - stack --version
 
 about:
   home: www.haskellstack.org
