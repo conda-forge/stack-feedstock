@@ -5,9 +5,7 @@ github:
   branch_name: main
   tooling_branch_name: main
 provider:
-  win: azure
+  linux_aarch64: default
 test: native_and_emulated
 conda_build:
   pkg_format: '2'
-provider:
-  linux_aarch64: default
