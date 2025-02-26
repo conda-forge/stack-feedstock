@@ -9,3 +9,6 @@ provider:
 test: native_and_emulated
 conda_build:
   pkg_format: '2'
+os_version:
+  linux_64: cos7
+  linux_aarch64: cos7
