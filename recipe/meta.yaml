@@ -32,7 +32,7 @@ requirements:
 
 about:
   home: www.haskellstack.org
-  license: BSD3-like
+  license: BSD-3-Clause
   license_file: LICENSE
   summary: Stack is a cross-platform program for developing Haskell projects.
   doc_url: https://docs.haskellstack.org/en/stable/README/
