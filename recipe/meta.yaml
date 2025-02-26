@@ -1,7 +1,7 @@
-{% set version = "2.11.1" %}
-{% set linuxsha256 = "408a120e824ed6e6b24c548a2ff6f210fcb0eed246f204a280ed4c75af0517e7" %}
-{% set osxsha256 = "cf3ce4c526fb29fabf84308a8a762f7ab703975f5c9eeb85aebcea97a02540fc" %}
-{% set winsha256 = "56a9394b3be8058206aa1efa23ea40cd8a3afbfd295432de7a81d72e86615087" %}
+{% set version = "2.15.5" %}
+{% set linuxsha256 = "d55f8554932aad23f7b1198e0d5ebe332073d73fe60e3f324d0b315c156d8c43" %}
+{% set osxsha256 = "1c17151516d120abdd9d6cdd93ba72ccda95db822da80bcafe0cf9cdc164c1d9" %}
+{% set winsha256 = "419aa63fd8e93d241e2b41e981bbee0ca6129fb95f062b76bb7b2243bd70abf8" %}
 
 package:
   name: stack
@@ -24,6 +24,7 @@ build:
 requirements:
   run:
     - {{ compiler('c') }}  # [linux]
+    - {{ compiler('cxx') }}  # [linux]
     - gmp                  # [linux]
     - make                 # [linux]
     - ncurses              # [linux]
@@ -31,7 +32,7 @@ requirements:
 
 about:
   home: www.haskellstack.org
-  license: BSD3-like
+  license: BSD-3-Clause
   license_file: LICENSE
   summary: Stack is a cross-platform program for developing Haskell projects.
   doc_url: https://docs.haskellstack.org/en/stable/README/
