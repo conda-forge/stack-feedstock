@@ -24,6 +24,7 @@ build:
 requirements:
   run:
     - {{ compiler('c') }}  # [linux]
+    - {{ compiler('cxx') }}  # [linux]
     - gmp                  # [linux]
     - make                 # [linux]
     - ncurses              # [linux]
