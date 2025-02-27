@@ -30,10 +30,6 @@ requirements:
     - ncurses                # [linux]
     - perl                   # [linux]
 
-test:
-  commands:
-    - stack --version
-
 about:
   home: www.haskellstack.org
   license: BSD-3-Clause
