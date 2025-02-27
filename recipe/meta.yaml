@@ -23,6 +23,7 @@ requirements:
   run:
     - {{ compiler('c') }}    # [linux]
     - {{ compiler('cxx') }}  # [linux]
+    # Needed to bump libc version on aarch64 (see conda-forge.yml and recipe/conda_build_config.yaml):
     - {{ stdlib('c') }}      # [linux and aarch64]
     - gmp                    # [linux]
     - make                   # [linux]
