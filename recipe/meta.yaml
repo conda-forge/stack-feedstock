@@ -21,12 +21,13 @@ build:
 
 requirements:
   run:
-    - {{ compiler('c') }}  # [linux]
+    - {{ compiler('c') }}    # [linux]
     - {{ compiler('cxx') }}  # [linux]
-    - gmp                  # [linux]
-    - make                 # [linux]
-    - ncurses              # [linux]
-    - perl                 # [linux]
+    - {{ stdlib('c') }}      # [linux and aarch64]
+    - gmp                    # [linux]
+    - make                   # [linux]
+    - ncurses                # [linux]
+    - perl                   # [linux]
 
 test:
   commands:

@@ -1,2 +1,4 @@
+# Matches os_version in conda-forge.yml;
+# Needed for memfd_create()
 c_stdlib_version:          # [linux and aarch64]
   - "2.28"                 # [linux and aarch64]
