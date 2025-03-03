@@ -1,34 +1,34 @@
-{% set version = "2.15.5" %}
-{% set linuxsha256 = "d55f8554932aad23f7b1198e0d5ebe332073d73fe60e3f324d0b315c156d8c43" %}
-{% set osxsha256 = "1c17151516d120abdd9d6cdd93ba72ccda95db822da80bcafe0cf9cdc164c1d9" %}
-{% set winsha256 = "419aa63fd8e93d241e2b41e981bbee0ca6129fb95f062b76bb7b2243bd70abf8" %}
+{% set version = "2.15.7" %}
 
 package:
   name: stack
   version: {{ version }}
 
 source:
-  fn: stack-{{ version }}-linux-x86_64.tar.gz  # [linux]
-  url: https://github.com/commercialhaskell/stack/releases/download/v{{ version }}/stack-{{ version }}-linux-x86_64.tar.gz  # [linux]
-  sha256: {{ linuxsha256 }}  # [linux]
-  fn: stack-{{ version }}-osx-x86_64.tar.gz  # [osx]
-  url: https://github.com/commercialhaskell/stack/releases/download/v{{ version }}/stack-{{ version }}-osx-x86_64.tar.gz  # [osx]
-  sha256: {{ osxsha256 }}  # [osx]
-  fn: stack-{{ version }}-windows-x86_64.zip  # [win]
+  url: https://github.com/commercialhaskell/stack/releases/download/v{{ version }}/stack-{{ version }}-linux-x86_64.tar.gz  # [linux64]
+  sha256: 4e635d6168f7578a5694a0d473c980c3c7ed35d971acae969de1fd48ef14e030  # [linux64]
+  url: https://github.com/commercialhaskell/stack/releases/download/v{{ version }}/stack-{{ version }}-linux-aarch64.tar.gz  # [linux and aarch64]
+  sha256: f0c4b038c7e895902e133a2f4c4c217e03c4be44aa5da48aec9f7947f4af090b  # [linux and aarch64]
+  url: https://github.com/commercialhaskell/stack/releases/download/v{{ version }}/stack-{{ version }}-osx-x86_64.tar.gz  # [osx and 64]
+  sha256: ef97f65759a922bc7f5399d9311afdc4a43cc454b70ea7426f991c067899cef1  # [osx and 64]
+  url: https://github.com/commercialhaskell/stack/releases/download/v{{ version }}/stack-{{ version }}-osx-aarch64.tar.gz  # [osx and arm64]
+  sha256: fc963f041fbe3ddf3ff12271c74334846a583a0714ce808d8a2d2c91de4a3968  # [osx and arm64]
   url: https://github.com/commercialhaskell/stack/releases/download/v{{ version }}/stack-{{ version }}-windows-x86_64.zip  # [win]
-  sha256: {{ winsha256 }}  # [win]
+  sha256: fba8cd635982151ca890d2ca73f98a69e05a7387077fdc2d102f52580ba81cdf  # [win]
 
 build:
   number: 0
 
 requirements:
   run:
-    - {{ compiler('c') }}  # [linux]
+    - {{ compiler('c') }}    # [linux]
     - {{ compiler('cxx') }}  # [linux]
-    - gmp                  # [linux]
-    - make                 # [linux]
-    - ncurses              # [linux]
-    - perl                 # [linux]
+    # Needed to bump libc version on aarch64 (see conda-forge.yml and recipe/conda_build_config.yaml):
+    - {{ stdlib('c') }}      # [linux and aarch64]
+    - gmp                    # [linux]
+    - make                   # [linux]
+    - ncurses                # [linux]
+    - perl                   # [linux]
 
 about:
   home: www.haskellstack.org

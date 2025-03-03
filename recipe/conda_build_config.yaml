@@ -1,6 +1,4 @@
-cuda_compiler_version:                    # [linux64]
-  - None                                  # [linux64]
-docker_image:                             # [linux64]
-  - condaforge/linux-anvil-cos7-x86_64    # [linux64]
-cdt_name:                                 # [linux64]
-  - cos7                                  # [linux64]
+# Matches os_version in conda-forge.yml;
+# Needed for memfd_create()
+c_stdlib_version:          # [linux and aarch64]
+  - "2.28"                 # [linux and aarch64]
